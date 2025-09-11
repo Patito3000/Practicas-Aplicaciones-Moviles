@@ -1,0 +1,30 @@
+
+Estuvimos viendo objetos, como declarar, la sintaxis, cadenas entre otras cosas, las listas poder tomar cualquier valor pero solo uno por lista, los booleanos son tipos de datos lógicos que hacen que el programa funcione.
+
+
+
+ {
+     "username"; 'Angelk',
+     "horas"; 14,
+ 
+
+ 
+  "username"; 'ajfkbhf',
+  "score"; 0.4,
+  "hours"; 1,
+  "profesional"; false
+}
+
+
+console.log("Cadenas")
+console.log("14.3")
+//Mandar llamar booleano
+console.log("true")
+//Listas
+console.log(["1,2,3"])
+ 
+//Objeto con llaves
+console.log({"username": "ryan", "score": 70.4});
+
+//console.log(completeName);
+//concatenar 

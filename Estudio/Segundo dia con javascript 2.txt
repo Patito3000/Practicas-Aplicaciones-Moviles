@@ -1,0 +1,49 @@
+Parte final del aprendizaje, estuvimos viendo las variables, condicionales y bucles
+
+let numberOne = 100;
+let numberTwo = 500;
+
+let result = numberOne > numberTwo;
+
+
+
+let passwordDB = 'alejandro214';
+let input = 'alejando214';
+
+let result = input == passwordDB;
+
+console.log(result);
+
+
+//condicionales
+let score = 70;
+if (score > 30) {
+    console.log('Carita feliz');
+} else if (score > 15) {
+    console.log('Estas mejorando');
+}
+else {
+    console.log('Decepcion total');
+}
+
+
+
+// bucles con while y for
+//let count = 0;
+//while (count < 50) {
+    //console.log(count);
+  //  count++;
+//}
+//Listas
+//let names = ['Axel', 'nery', 'Angel'];
+//declaracion con for
+//Se declara la variable i
+//for(let i = names.length - 1; i >= 0; i--) {
+   // console.log(names[i]);
+//}
+
+
+//llamando funcion
+// funcionesfunction add(n1, n2) {
+ //   console.log(n1 + n2);
+//}
