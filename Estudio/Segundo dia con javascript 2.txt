@@ -35,11 +35,11 @@ else {
   //  count++;
 //}
 //Listas
-//let names = ['Axel', 'nery', 'Angel'];
+//let name = ['Axel', 'nery', 'Angel'];
 //declaracion con for
 //Se declara la variable i
-//for(let i = names.length - 1; i >= 0; i--) {
-   // console.log(names[i]);
+//for(let i = name.length - 1; i >= 0; i--) {
+   // console.log(name[i]);
 //}
 
 
@@ -47,3 +47,4 @@ else {
 // funcionesfunction add(n1, n2) {
  //   console.log(n1 + n2);
 //}
+

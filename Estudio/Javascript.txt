@@ -1,0 +1,6 @@
+
+JavaScript es uno de los lenguajes importantes para las paginas web, veremos la sintaxis como tal, estuvo explicando sobre las interfaces que como tal crear una pagina web es una interfaz, estuvo explicando sobre las herramientas y el por que usar JavaScript.
+
+Practicas:
+Hello Word
+Tipos de datos
