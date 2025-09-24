@@ -1,0 +1,41 @@
+const persona = {
+    nombre : "Angel",
+    edad : "",
+    apellido : "",
+
+}
+const {nombre} = persona;
+
+console.log(nombre);
+
+let productos = [
+    {nombre: "AngelJp", precio: 1200},
+    {nombre: "Laura", precio: 124142},
+    {nombre: "Luis", precio: 124142},
+    {nombre: "Lourdez", precio: 124142},
+
+];
+
+const num = productos.filter(producto => producto.precio > 1000);
+console.log(num);
+
+const map2 = productos.map(producto1 => producto1.nombre);
+console.log(map2);
+
+let people = [
+    {nombre: "AngelJp", edad: 30},
+    {nombre: "Luis", edad: 23},
+    {nombre: "Laura", edad: 20},
+    {nombre: "Liliana", edad: 18},
+
+];
+
+const nm1 = people.find(people1 => people1.nombre == "Luis");
+console.log(nm1);
+
+people.forEach(persona => {
+  console.log(`${persona.nombre}: ${persona.edad} años`);
+});
+
+const sumEdad = people.reduce((total, persona) => total + persona.edad, 0);
+console.log(sumEdad); // 85
