@@ -1,0 +1,82 @@
+Ejercicio 1
+
+----------------------------------------------------------------------Código del archivo util.js
+
+export function resta (a, b){
+    return a - b;
+    
+}
+---------------------------------------------------------------------- Código del archivo main.js -------------------------
+
+import { resta } from './util.js';
+
+const resultado = resta(10, 5);
+document.getElementById('resultado').textContent = `10 - 5 = ${resultado}`;}
+
+---------------------------------------------------------------------- Código del HTML (HTML:5)-----------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Resultado de la resta</h1>
+    <p id="resultado"></p>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ejercicio 2
+function verificarUsuario(admin) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const usuario = "admin";
+            if (usuario === admin) {
+                resolve("Acceso concedido");
+            } else {
+                reject("Acceso denegado");
+            }
+        }, 3000);
+    });
+}
+
+// Pruebas
+verificarUsuario("admin")
+    .then(res => console.log(res)) // Acceso concedido
+    .catch(err => console.error(err));// Acceso denegado
+
+verificarUsuario("Angel")
+    .then(res => console.log(res)) // Acceso concecido
+    .catch(err => console.error(err)); // Acceso denegado
+
+
+Ejercicio 3
+
+function simularPeticionAPI() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve("Datos recibidos correctamente");
+        }, 5000);
+    });
+}
+
+async function obtenerDatos() {
+    try {
+        const resultado = await simularPeticionAPI();
+
+
+        console.log(resultado); // 
+    } catch (error) {
+
+        console.error("Error al obtener los datos: ", error);
+    }
+}
+
+
+obtenerDatos();
+
+
